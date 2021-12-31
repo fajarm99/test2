@@ -1,0 +1,130 @@
+Polystar OSIX trace
+Saved by: fajarmut (Telkomsel)
+Date saved: 2021-11-18 15:35:21 +0700 (ICT)
+OSIX Version: 6.7.1.77
+
+	Time	GTP Message	GTP IMSI	GTP MSISDN	GTP End User Address	GTP Access Point Name	GTP Cause	GTP Request Cause	GTP RAC	GTP SAC
+Message #1	21:54:32.215	19; Update PDP Context Response					128; Request accepted			
+
+Message #1
+------------------------------------------------------
+Ethernet
+------------------------------------------------------
+   Destination address = fc:bc:d1:bd:b8:ce
+   Source address = 00:de:fb:c5:32:c1
+   Frame type = 800'H (IPv4)
+------------------------------------------------------
+IP
+------------------------------------------------------
+   0100---- Protocol version = 4 (IP version 4)
+   ----0101 Header length = 5 (20 bytes)
+   Differentiated Services Field 
+      001010-- Differentiated Services Codepoint = 10
+      ------0- ECN-Capable Transport (ECT) = 0
+      -------0 ECN-CE = 0
+   Packet length = 91
+   Identification = 49016
+   Flags 
+      0------- Reserved = 0 (Reserved)
+      -0------ DF = 0 (May Fragment)
+      --0----- MF = 0 (Last Fragment)
+   Fragment offset = 0
+   00111100 Time to live = 60
+   00010001 Protocol = 17 (User Datagram Protocol)
+   Header checksum = 59de'H
+   Source IP address = 221.132.211.209
+   Destination IP address = 221.132.214.56
+------------------------------------------------------
+UDP
+------------------------------------------------------
+   Source port = 2123
+   Destination port = 2123
+   Length Field = 71
+   Checksum = 8b9b'H
+------------------------------------------------------
+GTP
+------------------------------------------------------
+   001----- GTP Version = 1
+------------------------------------------------------
+GTP v.1
+------------------------------------------------------
+   ---1---- Protocol discriminator = 1
+   ----0--- Spare = 0 (Spare field (1 bit))
+   -----0-- Extension Header flag (E) = 0 (Extension Header field either is not present or, if present, shall not be interpreted)
+   ------1- Sequence number flag (S) = 1 (Sequence Number field is present, and shall be interpreted)
+   -------0 PN = 0
+   00010011 Tag = 19 (Update PDP Context Response)
+   Length Field = 55
+   Tunnel Endpoint Identifier = 7c5ce124'H
+   Sequence Number = 16620
+   00000000 N-PDU Number = 0
+   ExtensionHeader 
+      00000000 No more extension headers = 0
+   IE: Cause 
+      00000001 Tag = 1 (Cause)
+      10000000 Cause = 128 (Request accepted)
+   IE: Recovery 
+      00001110 Tag = 14 (Recovery)
+      00001001 Restart counter = 9
+   IE: Tunnel Endpoint Identifier Data I 
+      00010000 Tag = 16 (Tunnel Endpoint Identifier Data I)
+      TunnelEndpointIdentifierDataI = 40b85b58'H
+   IE: Tunnel Endpoint Identifier Control Plane 
+      00010001 Tag = 17 (Tunnel Endpoint Identifier Control Plane)
+      TunnelEndpointIdentifierControlPlane = acc097c0'H
+   IE: Charging ID 
+      01111111 Tag = 127 (Charging ID)
+      ChargingID = ecf81b30'H
+   IE: GSN Address 
+      10000101 Tag = 133 (GSN Address)
+      Length Field = 4
+      GSN-Address = 221.132.211.209
+   IE: GSN Address 
+      10000101 Tag = 133 (GSN Address)
+      Length Field = 4
+      GSN-Address = 221.132.208.1
+   IE: Quality of Service (QoS) Profile 
+      10000111 Tag = 135 (Quality of Service (QoS) Profile)
+      Length Field = 15
+      00000011 Allocation/Retention Priority = 3
+      -----011 ReliabilityClass = 3 (Unacknowledged GTP and LLC; Acknowledged RLC, Protected data)
+      --011--- DelayClass = 3 (Delay class 3)
+      00------ Spare = 0 (Spare field (2 bits))
+      -----011 PrecedenceClass = 3 (Low priority)
+      ----0--- Spare = 0 (Spare field (1 bit))
+      1001---- PeakThroughput = 9 (Up to 256 000 octet/s)
+      ---11111 MeanThroughput = 31 (Best effort)
+      000----- Spare = 0 (Spare field (3 bits))
+      -----001 Delivery of erroneous SDUs = 1 (No detect (-))
+      ---10--- Delivery order = 2 (Without delivery order (no))
+      011----- Traffic class = 3 (Interactive class)
+      10010110 Maximum SDU size = 150 (1500 octets)
+      11010001 Maximum bit rate for uplink = 209 (5760 kbps)
+      11111110 Maximum bit rate for downlink = 254 (8640 kbps)
+      ----0100 SDU error ratio = 4 (6)
+      0111---- Residual Bit Error Rate (BER) = 7 (5)
+      ------11 Traffic handling priority = 3 (Priority level 3)
+      010010-- Transfer delay = 18 (300 ms)
+      11111111 Guaranteed bit rate for uplink = 255 (Reserved)
+      11111111 Guaranteed bit rate for downlink = 255 (Reserved)
+      ----0000 Source Statistics Descriptor = 0 (unknown)
+      ---0---- Signalling Indication = 0 (Not optimised for signalling traffic)
+      000----- Spare = 0 (Spare field (3 bits))
+      01100100 Maximum bit rate for downlink (extended) = 100 (42 Mbps)
+      00000000 Guaranteed bit rate for downlink (extended) = 0 (Use the value indicated by the bit rate)
+fc bc d1 bd b8 ce 00 de fb c5 32 c1 08 00 45 28
+00 5b bf 78 00 00 3c 11 59 de dd 84 d3 d1 dd 84
+d6 38 08 4b 08 4b 00 47 8b 9b 32 13 00 37 7c 5c
+e1 24 40 ec 00 00 01 80 0e 09 10 40 b8 5b 58 11
+ac c0 97 c0 7f ec f8 1b 30 85 00 04 dd 84 d3 d1
+85 00 04 dd 84 d0 01 87 00 0f 03 1b 93 1f 71 96
+d1 fe 74 4b ff ff 00 64 00
+
+..........2...E(
+.[.x..<.Y.......
+.8.K.K.G..2..7|\
+.$@........@.[X.
+........0.......
+..............q.
+..tK...d.
+
